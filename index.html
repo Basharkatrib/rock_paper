@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(173, 173, 173);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .icon img{
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .resault{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            margin-top: 10px;
+            width: 80px;
+            height: 30px;
+            border-radius: 30px;
+            border: none;
+            transition: 1s;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <img src="./Assets/all.png" alt="" srcset="">
+
+    </div>
+    <div class="icon">
+        <img src="./Assets/paper.png" alt="" srcset="" onclick="playgame('paper')">
+        <img src="./Assets/rock.png" alt="" srcset="" onclick="playgame('rock')">
+        <img src="./Assets/saicsor.png" alt="" srcset=""  onclick="playgame('scissors')">
+       
+    </div>
+    <div class="resault">
+        <button onclick="reset()">Reset</button>
+        <p id="details"></p>
+
+        <p id="resault"></p>
+
+    </div>
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
